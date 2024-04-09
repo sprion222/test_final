@@ -6,6 +6,8 @@ from merge_file import *
 #问答主体
 class Chatbotgraph:
     def __init__(self):
+        merge_file=merge_all()
+        merge_file.merge_main()
         self.classifier=Questionclassifier() #问题分类器
         self.parser=Questionparser() #问题解析器
         self.searcher=Answersearch() #答案查找器
