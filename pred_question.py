@@ -23,8 +23,8 @@ class Pred_question:
 
 
     def load_model(self,model_path, device, args):
-        model = BertTextModel_encode_layer().to(device)
-        model.load_state_dict(torch.load(model_path))
+        model = BertTextModel_encode_layer()
+        model.load_state_dict(torch.load(model_path,map_location=torch.device('cpu')))
         model.eval()
         return model
 
