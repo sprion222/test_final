@@ -1,0 +1,14 @@
+other
+different-name
+color
+type
+taste
+shape
+light
+flower
+level
+temperature
+Ph
+cultivation-method
+reproduction
+desc

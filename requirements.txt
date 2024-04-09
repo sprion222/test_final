@@ -1,0 +1,7 @@
+ackit==0.1.2
+jieba==0.42.1
+py2neo_history==2021.2.3
+streamlit==1.31.1
+torch==2.2.1
+transformers==4.38.2
+filesplit==4.0.1
