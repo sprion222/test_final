@@ -6,13 +6,13 @@ from merge_file import *
 #问答主体
 class Chatbotgraph:
     def __init__(self):
-        merge_file=merge_all()
-        merge_file.merge_main()
         self.classifier=Questionclassifier() #问题分类器
         self.parser=Questionparser() #问题解析器
         self.searcher=Answersearch() #答案查找器
 
     def chat_main(self,sent):
+        merge_file=merge_all()
+        merge_file.merge_main()
         #接收用户输入并对输入的问题进行分类
         #res_classify = {'args': {'三七': ['Plant'], '春季': ['Session'], '中光': ['Light']}, 'question_types': ['plant_level', 'plant_ph']}
         res_classify = self.classifier.classify(sent)
